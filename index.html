@@ -1,0 +1,97 @@
+<h2 class="basketAdditionContainer--h2">Why Not Consider These&#63;</h2>
+<div id="basketAdditionContainer">  
+</div>
+
+<!-- add media query for the add to cart block so that it becomes a column layout and will display on tablets -->
+
+<style>
+    #basketAdditionContainer {
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin: 10px 0;
+    }
+    .basketAdditionContainer--card {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+        padding: 15px 5px;
+        margin: 0 5px;
+        border: 1px solid rgba(69, 69, 68, 0.25);
+        border-radius: 15px;
+    }
+    .basketAdditionContainer--card--img {
+        max-width: 100px;
+        padding: 0 0 15px;
+    }
+    .basketAdditionContainer--card--title {
+        color: #575756;
+        font-size: 14.38px;
+        font-weight: normal;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .basketAdditionContainer--card--price--promo {
+        font-size: 12px;
+        color: #575756;
+    }
+    .basketAdditionContainer--card--price {
+        font-size: 14px;
+        text-align: center;
+    }
+    .basketAdditionContainer--card--price__redText {
+        color: #e5322d;
+        font-weight: 500;
+    }
+    .basketAdditionContainer--card--basket {
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+        font-size: 12px;
+        margin: 10px auto;
+    }
+    .basketAdditionContainer--card--basket--qtyBlock {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+    .basketAdditionContainer--card--basket--qtyBlock--label {
+        padding-right: 5px;
+        margin: 0;
+    }
+    .basketAdditionContainer--card--basket--qtyBlock--quantity {
+        text-align: center;
+        width: 17%;
+        min-width: 23.9px;
+    }
+    .basketAdditionContainer--card--basket--addToCart {
+        background-color: #71bf44;
+        border: 1px solid #71bf44;
+        border-radius: 5px;
+        color: #fff;
+        padding: 5px 15px;
+    }
+    .basketAdditionContainer--card--basket--addToCart:hover {
+        background-color: #66ac3d
+    }
+    #basketAdditionContainer:hover {
+        cursor: pointer;
+    }
+    .basketAdditionContainer--card:hover .basketAdditionContainer--card--basket {
+        filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));
+    }
+    @media(max-width: 650px) {
+        #basketAdditionContainer, 
+        .basketAdditionContainer--h2 {
+            display: none;
+        }
+    }
+</style>
